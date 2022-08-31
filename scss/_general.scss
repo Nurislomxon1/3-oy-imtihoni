@@ -1,0 +1,35 @@
+/* GENERAL */
+
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+body {
+  font-family: "Public Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  @include sticky-footer;
+  background-color: var(--main-body-bg-color);
+}
+
+/* STICKY-FOOTER */
+
+.site-main {
+  flex-grow: 1;
+}

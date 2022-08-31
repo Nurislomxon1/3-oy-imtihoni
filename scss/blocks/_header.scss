@@ -1,0 +1,134 @@
+/* Start Header Section */
+
+.body-off{
+  overflow: hidden;
+}
+.site-header {
+  position: relative;
+  padding: 32px 0 40px 0;
+}
+
+.header-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-nav {
+  position: absolute;
+  top: 87px;
+  right: 34px;
+  z-index: 5;
+  display: none;
+  width: 223px;
+  padding: 40px 63px;
+  background-color: var(--Grayish-Dark-Blue);
+}
+
+.site-nav__list {
+  display: flex;
+  flex-direction: column;
+  @include list-unstyle;
+  text-align: center;
+}
+
+.site-nav__item {
+  margin-bottom: 32px;
+}
+
+.site-nav__link {
+  @include link-unstyle;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.site-nav__link--active {
+  color: var(--Slightly-Desaturated-Cyan);
+}
+.nav-open-btn {
+  width: 24px;
+  height: 13px;
+  background-image: url("../../images/btn-open.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  border: none;
+}
+
+.site-nav-on .nav-open-btn {
+  width: 18px;
+  height: 19px;
+  background-image: url("../../images/close-btn.svg");
+}
+
+.site-nav-on .site-nav {
+  display: block;
+  animation: navAnimation .8s;
+}
+
+@keyframes navAnimation {
+  from {
+      transform: translateY(-1000px);
+  }
+
+  to {
+      transform: translateY(0px);
+  }
+}
+
+@media only screen and (min-width:700px) {
+  .body-off{
+    overflow-y: scroll;
+  }
+  .container {
+      padding: 0 40px;
+  }
+
+  .site-header {
+      padding: 64px 0 47px 0;
+  }
+
+  .site-nav {
+      position: static;
+      display: block;
+      width: 310px;
+      padding: 0;
+      background-color: transparent
+  }
+
+  .site-nav__list {
+      flex-direction: row;
+  }
+
+  .site-nav__item {
+      margin-bottom: 0;
+  }
+
+  .site-nav__item:not(:last-child) {
+      margin-right: 42px;
+  }
+
+  .site-nav__link {
+      color: var(--Grayish-Dark-Blue);
+  }
+
+  .site-nav__link--active {
+      color: var(--Slightly-Desaturated-Cyan);
+  }
+
+  .nav-open-btn {
+      display: none;
+  }
+}
+
+@media only screen and (min-width:1100px) {
+  .container {
+      padding: 0 20px;
+  }
+
+  .site-header {
+      padding: 64px 0 54px 0;
+  }
+}

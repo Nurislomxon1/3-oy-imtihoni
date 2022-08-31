@@ -1,0 +1,79 @@
+/* Start Interesting Project Section */
+.project {
+    padding: 96px 0;
+}
+
+.project-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-part__title {
+    margin: 0;
+    font-family: "Ibarra Real Nova", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.357143px;
+    color: var(--Grayish-Dark-Blue);
+}
+
+.project-part__link {
+    @include link-unstyle;
+    margin-top: 40px;
+    padding: 16px 32px 16px 32px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--Grayish-Dark-Blue);
+    border: 1px solid var(--Grayish-Dark-Blue);
+    transition: all .5s;
+    
+    &:hover {
+        color: #ffffff;
+        background-color: var(--Grayish-Dark-Blue);
+    }
+}
+
+@media only screen and (min-width:375px) {
+    .project-part__title {
+        font-size: 40px;
+        line-height: 42px;
+    }
+    
+    .project-part__title-box {
+        margin: 0 auto;
+        max-width: 350px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .project-part {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    
+    .project-part__title-box {
+        min-width: 350px;
+        margin: 0;
+    }
+    
+    .project-part__decoration {
+        width: 100%;
+        max-width: 3000px;
+        height: 1px;
+        margin: 0 32px;
+        background-color: var(--Grayish-Dark-Blue);
+    }
+    
+    .project-part__link {
+        margin-top: 0;
+        white-space: nowrap;
+    }
+}
+
+/* End of Interesting Project Section */

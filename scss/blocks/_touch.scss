@@ -1,0 +1,59 @@
+#get-touch {
+    padding: 24px 0 32px 0;
+    border-top: 1px solid #ddddde;
+    border-bottom: 1px solid #ddddde;
+}
+
+.get-touch-part__title {
+    margin: 0;
+    font-family: "Ibarra Real Nova", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: var(--Grayish-Dark-Blue);
+}
+
+.get-touch-part__text {
+    margin: 24px 0;
+    font-size: 15px;
+    line-height: 30px;
+    color: var(--Grayish-Dark-Blue);
+    opacity: 0.8;
+}
+
+.get-touch-list {
+    display: flex;
+    align-items: center;
+    @include list-unstyle
+}
+
+.get-touch-list__item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.get-touch-list__link {
+    display: inline-block;
+}
+
+@media only screen and (min-width:1050px) {
+    #get-touch {
+        padding: 48px 0;
+    }
+
+    .get-touch-part {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .get-touch-part__info-side {
+        max-width: 635px;
+    }
+
+    .get-touch-part__text {
+        font-size: 16px;
+        margin: 0 0 24px 0;
+    }
+}
+
+/* End of Get In Touch Section */
