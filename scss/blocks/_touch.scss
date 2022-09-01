@@ -1,10 +1,10 @@
-#get-touch {
+.get-touch {
     padding: 24px 0 32px 0;
     border-top: 1px solid #ddddde;
     border-bottom: 1px solid #ddddde;
 }
 
-.get-touch__title {
+.get-touch-part__title {
     margin: 0;
     font-family: "Ibarra Real Nova", "Times New Roman", serif;
     font-weight: 700;
@@ -14,7 +14,7 @@
     color: var(--Grayish-Dark-Blue);
 }
 
-.get-touch__text {
+.get-touch-part__text {
     margin: 24px 0;
     font-size: 15px;
     line-height: 30px;
@@ -41,16 +41,16 @@
         padding: 48px 0;
     }
 
-    .get-touch {
+    .get-touch-part {
         display: flex;
         justify-content: space-between;
     }
 
-    .get-touch__info-side {
+    .get-touch-part__info-side {
         max-width: 635px;
     }
 
-    .get-touch__text {
+    .get-touch-part__text {
         font-size: 16px;
         margin: 0 0 24px 0;
     }

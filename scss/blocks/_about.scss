@@ -3,18 +3,18 @@
     padding-top: 96px;
 }
 
-.about__img {
+.about-part__img {
     width: 100%;
 }
 
-.about__text-box {
+.about-part__text-box {
     margin-top: 32px;
     padding: 32px 0 51px 0;
     border-top: 1px solid #ddddde;
     border-bottom: 1px solid #ddddde;
 }
 
-.about__title {
+.about-part__title {
     margin: 0;
     font-family: "Ibarra Real Nova", "Times New Roman", serif;
     font-weight: 700;
@@ -24,7 +24,7 @@
     color: var(--Grayish-Dark-Blue);
 }
 
-.about__text {
+.about-part__text {
     margin: 28px 0 24px 0;
     font-size: 15.5px;
     line-height: 30px;
@@ -32,7 +32,7 @@
     opacity: 0.8;
 }
 
-.about__link {
+.about-part__link {
     @include link-unstyle;
     padding: 16px 32px;
     font-size: 12px;
@@ -50,7 +50,7 @@
 }
 
 @media only screen and (min-width:450px) {
-    .about__img {
+    .about-part__img {
         width: 350px;
         height: 400px;
         margin: 0 auto;
@@ -58,50 +58,50 @@
 }
 
 @media only screen and (min-width:768px) {
-    .about {
+    .about-part {
         display: flex;
         width: 100%;
     }
     
-    .about__img {
+    .about-part__img {
         width: 100%;
         height: 600px;
     }
     
-    .about__text-box {
+    .about-part__text-box {
         padding: 50px 0 46px 0;
     }
     
-    .about__text-box {
+    .about-part__text-box {
         max-width: 339px;
         margin-top: 0;
     }
     
-    .about__img-box {
+    .about-part__img-box {
         width: 50%;
         margin-right: 69px;
     }
 }
 
 @media only screen and (min-width:850px) {
-    .about {
+    .about-part {
         display: flex;
         justify-content: start;
         width: 100%;
     }
     
-    .about__img-box {
+    .about-part__img-box {
         width: 50%;
         margin-right: 69px;
     }
     
-    .about__text-box {
+    .about-part__text-box {
         max-width: 350px;
     }
 }
 
 @media only screen and (min-width:1000px) {
-    .about__img-box {
+    .about-part__img-box {
         margin-right: 125px;
     }
 }
