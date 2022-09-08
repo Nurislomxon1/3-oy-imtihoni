@@ -33,11 +33,11 @@
     color: #ffffff;
     background-color: var(--Dark-Blue);
     text-decoration: none;
-
+    
     &:hover {
         background-color: var(--Slightly-Desaturated-Cyan);
     }
-
+    
     &::before {
         width: 16px;
         height: 12px;
@@ -72,7 +72,7 @@ only screen and (min-resolution: 2dppx) {
         max-width: 500px;
         height: 271px;
     }
-
+    
     .hero-part__title {
         font-size: 39px;
     }
@@ -90,7 +90,7 @@ only screen and (min-resolution: 2dppx) {
         height: 400px;
         background-image: url("../images/hero-bg-img-tablet.jpg");
     }
-
+    
     @media only screen and (-webkit-min-device-pixel-ratio: 2),
     only screen and (min--moz-device-pixel-ratio: 2),
     only screen and (-o-min-device-pixel-ratio: 2/1),
@@ -101,7 +101,7 @@ only screen and (min-resolution: 2dppx) {
             background-image: url("../images/hero-bg-img-tablet@2x.jpg");
         }
     }
-
+    
     .hero-part__text-box {
         max-width: 514px;
     }
@@ -112,7 +112,7 @@ only screen and (min-resolution: 2dppx) {
         max-width: 650px;
         height: 500px;
     }
-
+    
     .hero-part__title {
         font-size: 42px;
     }
@@ -123,7 +123,7 @@ only screen and (min-resolution: 2dppx) {
         max-width: 900px;
         height: 600px;
     }
-
+    
     .hero-part__text-box {
         position: absolute;
         bottom: 0;
@@ -132,7 +132,7 @@ only screen and (min-resolution: 2dppx) {
         padding-top: 56px;
         background: var(--Very-Light-Grey-bg);
     }
-
+    
     .hero-part__title {
         margin-top: 0;
         font-size: 45px;
@@ -145,7 +145,7 @@ only screen and (min-resolution: 2dppx) {
         max-width: 100%;
         background-image: url("../images/hero-bg-img.jpg");
     }
-
+    
     @media only screen and (-webkit-min-device-pixel-ratio: 2),
     only screen and (min--moz-device-pixel-ratio: 2),
     only screen and (-o-min-device-pixel-ratio: 2/1),
@@ -162,7 +162,7 @@ only screen and (min-resolution: 2dppx) {
     .hero-part__text-box {
         max-width: 445px;
     }
-
+    
     .hero-part__title {
         margin-bottom: 53px;
         font-size: 50px;
